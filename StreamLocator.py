@@ -45,24 +45,9 @@ def get_streaming_options(title):
     return results
 
 
-window = tk.Tk()
-frame_a = tk.Frame()
-frame_b = tk.Frame()
-label_1 = tk.Label(master= frame_a, text="Im in frame a")
-label_2 = tk.Label(master= frame_b, text="Im in frame b")
-button_a = tk.Button(master=frame_a,text="a Button")
-frame_a.pack()
-frame_b.pack()
-label_1.pack()
-label_2.pack()
-button_a.pack()
 
 
 
-window.mainloop()
-
-
-
-#options = get_streaming_options("Kikis Delivery Service")
-#for line in options:
-#    print(line)
+options = get_streaming_options("The Land Before Time")
+for line in options:
+    print(line)
